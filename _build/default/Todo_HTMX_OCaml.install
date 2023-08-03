@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/Todo_HTMX_OCaml/META"
+  "_build/install/default/lib/Todo_HTMX_OCaml/dune-package"
+  "_build/install/default/lib/Todo_HTMX_OCaml/opam"
+]
+bin: [
+  "_build/install/default/bin/Todo_HTMX_OCaml"
+]

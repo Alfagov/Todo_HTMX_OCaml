@@ -1,0 +1,4 @@
+(executable
+ (public_name Todo_HTMX_OCaml)
+ (name main)
+ (libraries dream tyxml templates))
