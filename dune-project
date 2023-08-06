@@ -1,15 +1,15 @@
-(lang dune 3.10)
+(lang dune 3.9)
 
 (name Todo_HTMX_OCaml)
 
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github Alfagov/Todo_HTMX_OCaml))
 
-(authors "Author Name")
+(authors "Lorenzo Pulcini")
 
-(maintainers "Maintainer Name")
+(maintainers "Lorenzo Pulcini")
 
 (license LICENSE)
 
@@ -17,7 +17,7 @@
 
 (package
  (name Todo_HTMX_OCaml)
- (synopsis "A short synopsis")
+ (synopsis "Todo MVC using OCaml and HTMX through Tyxml")
  (description "A longer description")
  (depends ocaml dune)
  (tags

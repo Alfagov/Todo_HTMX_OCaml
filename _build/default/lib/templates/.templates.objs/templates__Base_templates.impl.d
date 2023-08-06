@@ -1,1 +1,1 @@
-lib/templates/base_templates.ml: Tyxml_html Tyxml_xml
+lib/templates/base_templates.ml: Css_templates Htmx Tyxml_html Tyxml_xml

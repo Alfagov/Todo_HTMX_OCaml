@@ -19,16 +19,14 @@ let test = Tyxml_html.Unsafe.uri_attrib "test"
 let t1 = Tyxml_html.to_attrib (Tyxml_xml.string_attrib "test" "test")
 
 let todo_list_element id name desc =
+  let open Css_templates in
   li
-    ~a:[ a_id id; a_class [ "border"; "p-4"; "rounded-md"; "bg-white"; "shadow" ] ]
-    [ div ~a:[ a_class [ "text-gray-800" ] ] [ txt name; txt " - "; txt desc ]
+    ~a:[ a_id id; a_class (css_form "white") ]
+    [ div ~a:[ a_class (css_text_gray "800") ] [ txt name; txt " - "; txt desc ]
     ; div
         ~a:[ a_class [ "mt-2"; "space-x-2" ] ]
         [ button
-            ~a:
-              [ a_class [ "text-white"; "bg-red-500"; "px-2"; "py-1"; "rounded" ]
-              ; test "test"
-              ]
+            ~a:[ a_class (css_button ~bg_color:"red" ~txt_color:"white"); test "test" ]
             []
         ]
     ]

@@ -3,5 +3,8 @@
 (** @canonical Templates.Base_templates *)
 module Base_templates = Templates__Base_templates
 
+(** @canonical Templates.Css_templates *)
+module Css_templates = Templates__Css_templates
+
 (** @canonical Templates.Utils *)
 module Utils = Templates__Utils
